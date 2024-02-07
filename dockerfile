@@ -1,6 +1,5 @@
 FROM varakumar/mytomcat:latest
 LABEL maintainer="chaitanya"
-
-COPY ./target/*.war /usr/local/tomcat/webapps/
+ADD https://github.com/Chaitanya2528/addressbooknet.git/addressbook_screenshot.png /usr/local/tomcat/webapps/
 EXPOSE 8090
 CMD ["catalina.sh", "run"]
